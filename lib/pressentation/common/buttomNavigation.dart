@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 class ButtomNavigationBarContainer {
-  static getButtomNavigationBar() {
+  static getButtomNavigationBar(BuildContext context) {
     return BottomNavigationBar(
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
