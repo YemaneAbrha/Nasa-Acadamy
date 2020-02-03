@@ -26,7 +26,9 @@ class _HomePageState extends State<HomePage> {
                     height: 200,
                     color: Colors.white,
                   ),
-                  Container(),
+                  Container(
+                    child: Image(),
+                  ),
                   Container(
                     padding: EdgeInsets.all(5.0),
                     alignment: Alignment.bottomCenter,
