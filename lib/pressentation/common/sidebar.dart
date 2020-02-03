@@ -13,9 +13,9 @@ class _SideBarDrawerState extends State<SideBarDrawer> {
       child: Container(
         child: ListView(
           children: <Widget>[
-            DrawerHeader(
-                // Padding: const EdgeInsets.all(10.0);
-                ),
+            // DrawerHeader(
+            //     // Padding: const EdgeInsets.all(10.0);
+            //     ),
             ListTile(
               leading: Icon(Icons.flag),
               title: Text("About",
