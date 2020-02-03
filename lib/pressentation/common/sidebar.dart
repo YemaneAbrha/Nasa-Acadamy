@@ -17,7 +17,7 @@ class _SideBarDrawerState extends State<SideBarDrawer> {
             //     // Padding: const EdgeInsets.all(10.0);
             //     ),
             ListTile(
-              leading: Icon(Icons.flag),
+              leading: Icon(Icons.school),
               title: Text("About",
                   style: TextStyle(
                     color: Colors.black,
