@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:nasa/pressentation/common/basicappbar.dart';
+import 'package:nasa/pressentation/common/buttomNavigation.dart';
+import 'package:nasa/pressentation/common/sidebar.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -8,6 +11,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return null;
+    return Scaffold();
   }
 }
