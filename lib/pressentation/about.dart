@@ -49,12 +49,21 @@ class _AboutPageState extends State<AboutPage> {
                         ],
                       ),
                     ),
-                    child: Text(
-                      "About",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20.0,
-                      ),
+                    child: ListView(
+                      children: <Widget>[
+                        Center(
+                          child: Text(
+                            "About",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        Text(
+                            "Nasa Acadamy Organized in 2010 and it has two compus in both Sefera goro and Holy ..")
+                      ],
                     ),
                   ),
                 ],
@@ -92,12 +101,21 @@ class _AboutPageState extends State<AboutPage> {
                         ],
                       ),
                     ),
-                    child: Text(
-                      "Objective",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20.0,
-                      ),
+                    child: ListView(
+                      children: <Widget>[
+                        Center(
+                          child: Text(
+                            "Objective",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        Text(
+                            "Objective of nasa Acadamy is to bla bla bla ..... educate our children")
+                      ],
                     ),
                   ),
                 ],
@@ -122,7 +140,7 @@ class _AboutPageState extends State<AboutPage> {
                     alignment: Alignment.bottomCenter,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: ExactAssetImage('assets/images/school3.jpg'),
+                        image: ExactAssetImage('assets/images/school3.png'),
                         fit: BoxFit.fill,
                       ),
                       gradient: LinearGradient(
@@ -135,12 +153,21 @@ class _AboutPageState extends State<AboutPage> {
                         ],
                       ),
                     ),
-                    child: Text(
-                      "Misssion",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20.0,
-                      ),
+                    child: ListView(
+                      children: <Widget>[
+                        Center(
+                          child: Text(
+                            "Misssion",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        Text(
+                            "This is the image ins isi  is s is s iss isis issis isissis"),
+                      ],
                     ),
                   ),
                 ],
@@ -181,8 +208,9 @@ class _AboutPageState extends State<AboutPage> {
                     child: Text(
                       "Vission",
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Colors.black,
                         fontSize: 20.0,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
