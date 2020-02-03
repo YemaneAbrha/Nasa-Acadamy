@@ -36,7 +36,7 @@ class _AboutPageState extends State<AboutPage> {
                     alignment: Alignment.bottomCenter,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: ExactAssetImage('assets/images/birthday.jpg'),
+                        image: ExactAssetImage('assets/images/school.jpg'),
                         fit: BoxFit.fill,
                       ),
                       gradient: LinearGradient(
@@ -79,7 +79,7 @@ class _AboutPageState extends State<AboutPage> {
                     alignment: Alignment.bottomCenter,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: ExactAssetImage('assets/images/lab.jpg'),
+                        image: ExactAssetImage('assets/images/school2.png'),
                         fit: BoxFit.fill,
                       ),
                       gradient: LinearGradient(
@@ -122,7 +122,7 @@ class _AboutPageState extends State<AboutPage> {
                     alignment: Alignment.bottomCenter,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: ExactAssetImage('assets/images/labcolor.jpg'),
+                        image: ExactAssetImage('assets/images/school3.jpg'),
                         fit: BoxFit.fill,
                       ),
                       gradient: LinearGradient(
