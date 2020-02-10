@@ -43,7 +43,9 @@ class _SideBarDrawerState extends State<SideBarDrawer> {
                     color: Colors.black,
                     fontSize: 16.0,
                   )),
-              onTap: () {},
+              onTap: () {
+                Navigator.pushReplacementNamed(context, "/location");
+              },
             ),
           ],
         ),
