@@ -34,7 +34,9 @@ class _SideBarDrawerState extends State<SideBarDrawer> {
                     color: Colors.black,
                     fontSize: 16.0,
                   )),
-              onTap: () {},
+              onTap: () {
+                Navigator.pushReplacementNamed(context, '/events');
+              },
             ),
             ListTile(
               leading: Icon(Icons.place),
