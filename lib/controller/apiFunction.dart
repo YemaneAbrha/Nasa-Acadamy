@@ -5,7 +5,7 @@ import 'dart:convert';
 
 Future getMessage(BuildContext context) async {
   try {
-    final url = 'http://192.168.1.102:3000/message';
+    final url = 'http://10.0.2.2:3000/message';
     http.Response response = await http.get(url, headers: {
       "Accept": "application/json",
       "Content-Type": "application/json"
@@ -40,7 +40,7 @@ Future sendMessage(BuildContext context, Map<String, dynamic> body) async {
 
 Future getEvent(BuildContext context) async {
   try {
-    final url = 'http://192.168.1.102:3000/events';
+    final url = 'http://10.0.2.2:3000/events';
     http.Response response = await http.get(url, headers: {
       "Accept": "application/json",
       "Content-Type": "application/json"
