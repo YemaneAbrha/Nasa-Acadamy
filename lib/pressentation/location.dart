@@ -35,8 +35,7 @@ class _LocationPageState extends State<LocationPage> {
         },
       ),
       drawer: SideBarDrawer(),
-      bottomNavigationBar:
-          ButtomNavigationBarContainer.getButtomNavigationBar(context),
+      bottomNavigationBar: ButtomNavigationBarContainer(),
     );
   }
 }
