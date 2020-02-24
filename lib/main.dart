@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 // From nasa package
-import 'package:nasa/pressentation/home.dart';
-import 'package:nasa/pressentation/about.dart';
-import 'package:nasa/pressentation/location.dart';
-import 'package:nasa/pressentation/events.dart';
+import 'package:nasa/pressentation/body/home.dart';
+import 'package:nasa/pressentation/body/about.dart';
+import 'package:nasa/pressentation/body/location.dart';
+import 'package:nasa/pressentation/body/events.dart';
 
 void main() => runApp(MyApp());
 
