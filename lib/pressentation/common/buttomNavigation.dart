@@ -1,6 +1,9 @@
 // buttom Navigation bar
 // contain the buttom navigation
 import 'package:flutter/material.dart';
+import 'package:nasa/pressentation/body/home.dart';
+import 'package:nasa/pressentation/body/events.dart';
+import 'package:nasa/pressentation/body/home.dart';
 
 class ButtomNavigationBarContainer extends StatefulWidget {
   _ButtomNavigationBarContainerState createState() =>
@@ -15,15 +18,17 @@ class _ButtomNavigationBarContainerState
     return getButtomNavigationBar(context);
   }
 
-  void _navigateToScreen(int index) {
-    if (index == 0) {
-      Navigator.pushReplacementNamed(context, '/');
+  Widget navigateToScreen(int index) {
+    if (_selectedIndex == 0) {
+      return HomePage();
     }
-    if (index == 1) {
-      Navigator.pushReplacementNamed(context, '/location');
+    if (_selectedIndex == 1) {
+      return EventsPage();
     }
-    if (index == 2) {
-      Navigator.pushReplacementNamed(context, '/events');
+    if (_selectedIndex == 2) {
+      return EventsPage();
+    } else {
+      return HomePage();
     }
   }
 
@@ -31,7 +36,7 @@ class _ButtomNavigationBarContainerState
     setState(() {
       _selectedIndex = index;
     });
-    _navigateToScreen(index);
+    // _navigateToScreen(index);
   }
 
   getButtomNavigationBar(BuildContext context) {
