@@ -221,8 +221,7 @@ class _AboutPageState extends State<AboutPage> {
         ),
       ),
       drawer: SideBarDrawer(),
-      bottomNavigationBar:
-          ButtomNavigationBarContainer.getButtomNavigationBar(context),
+      bottomNavigationBar: ButtomNavigationBarContainer(),
     );
   }
 }
