@@ -3,6 +3,9 @@ import 'dart:async';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
+// From nasa package
+import 'package:nasa/model/json/data.dart';
+
 Future getMessage(BuildContext context) async {
   // try {
   //   final url = 'http://10.0.2.2:3000/message';
@@ -50,7 +53,7 @@ Future sendMessage(BuildContext context, Map<String, dynamic> body) async {
   }
 }
 
-Future getEvent(BuildContext context) async {
+Future<List<Event>> getEvent(BuildContext context) async {
   final url = 'http://10.0.2.2:8000/events';
   try {
     http.Response response = await http.get(
@@ -60,7 +63,22 @@ Future getEvent(BuildContext context) async {
         "Content-Type": "application/json"
       },
     );
-    final events = jsonDecode(response.body);
+    final datas = jsonDecode(response.body);
+    List<Event> events = [];
+    // print(datas);
+    // for (var data in datas) {
+    //   print(data);
+    // }
+    for (var data in datas) {
+      print(data);
+      Event event = Event(
+        data["_id"],
+        data["title"],
+        data["body"],
+        data["image"],
+      );
+      events.add(event);
+    }
     print(events);
     return events;
   } catch (err) {
