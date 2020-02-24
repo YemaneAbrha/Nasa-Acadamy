@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
-import 'package:nasa/pressentation/common/basicappbar.dart';
-import 'package:nasa/pressentation/common/buttomNavigation.dart';
-import 'package:nasa/pressentation/common/sidebar.dart';
+// import 'package:nasa/pressentation/common/basicappbar.dart';
+// import 'package:nasa/pressentation/common/buttomNavigation.dart';
+// import 'package:nasa/pressentation/common/sidebar.dart';
 import 'package:nasa/controller/apiFunction.dart';
 
 class EventsPage extends StatefulWidget {
@@ -35,8 +35,8 @@ class _EventsPageState extends State<EventsPage> {
                 itemCount: snapshot.data.length,
                 itemBuilder: (BuildContext context, int index) {
                   return SizedBox(
-                    width: 200,
-                    height: 200,
+                    // width: 200,
+                    // height: 200,
                     child: Stack(
                       children: <Widget>[
                         Container(
