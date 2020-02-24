@@ -15,30 +15,43 @@ class _ButtomNavigationBarContainerState
     return getButtomNavigationBar(context);
   }
 
+  void _navigateToScreen(int index) {
+    if (index == 0) {
+      Navigator.pushReplacementNamed(context, '/');
+    }
+    if (index == 1) {
+      Navigator.pushReplacementNamed(context, '/location');
+    }
+    if (index == 2) {
+      Navigator.pushReplacementNamed(context, '/events');
+    }
+  }
+
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
     });
+    _navigateToScreen(index);
   }
 
   getButtomNavigationBar(BuildContext context) {
     return BottomNavigationBar(
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
-          icon: Icon(Icons.message),
-          title: Text('Message'),
-        ),
-        BottomNavigationBarItem(
           icon: Icon(Icons.home),
-          title: Text("Home"),
+          title: Text('Home'),
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.notifications),
-          title: Text("Notification"),
+          icon: Icon(Icons.message),
+          title: Text("Message"),
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.event),
+          title: Text("Event"),
         ),
       ],
       currentIndex: _selectedIndex,
-      selectedItemColor: Colors.amber[800],
+      selectedItemColor: Color.fromRGBO(0, 141, 81, 1.0),
       onTap: _onItemTapped,
     );
   }
