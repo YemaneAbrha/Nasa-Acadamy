@@ -193,8 +193,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       drawer: SideBarDrawer(),
-      bottomNavigationBar:
-          ButtomNavigationBarContainer.getButtomNavigationBar(context),
+      bottomNavigationBar: ButtomNavigationBarContainer(),
     );
   }
 }
