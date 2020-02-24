@@ -28,10 +28,70 @@ class _EventsPageState extends State<EventsPage> {
                   ),
                 );
               } else {
+                print(snapshot.data[0].title);
                 return ListView.builder(
                   itemCount: snapshot.data.length,
                   itemBuilder: (BuildContext context, int index) {
-                    return Text("There Is Data");
+                    return SizedBox(
+                      width: 200,
+                      height: 200,
+                      child: Stack(
+                        children: <Widget>[
+                          Container(
+                            width: 200,
+                            height: 200,
+                            color: Colors.white,
+                          ),
+                          Container(
+                            padding: EdgeInsets.all(10.0),
+                            margin: EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 0.0),
+                            alignment: Alignment.bottomCenter,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: ExactAssetImage(
+                                    'assets/images/birthday.jpg'),
+                                fit: BoxFit.fill,
+                              ),
+                              gradient: LinearGradient(
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                                colors: <Color>[
+                                  Colors.black.withAlpha(1),
+                                  Colors.black12,
+                                  Colors.black45
+                                ],
+                              ),
+                            ),
+                            child: Card(
+                              color: Colors.transparent,
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  ListTile(
+                                    title: Text(
+                                      snapshot.data[index].title,
+                                      style: TextStyle(
+                                        color: Colors.orange,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    subtitle: Text(
+                                      snapshot.data[index].body,
+                                      style: TextStyle(
+                                        color: Colors.orange,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
                   },
                 );
               }
