@@ -73,15 +73,17 @@ class _EventsPageState extends State<EventsPage> {
                                     title: Text(
                                       snapshot.data[index].title,
                                       style: TextStyle(
-                                        color: Colors.orange,
+                                        color: Colors.black,
                                         fontWeight: FontWeight.bold,
+                                        fontSize: 30,
                                       ),
                                     ),
                                     subtitle: Text(
                                       snapshot.data[index].body,
                                       style: TextStyle(
-                                        color: Colors.orange,
-                                        fontWeight: FontWeight.bold,
+                                        color: Colors.black,
+                                        // fontWeight: FontWeight.bold,
+                                        fontSize: 20,
                                       ),
                                     ),
                                   ),
