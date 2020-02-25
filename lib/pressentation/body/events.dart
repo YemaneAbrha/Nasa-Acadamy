@@ -35,8 +35,8 @@ class _EventsPageState extends State<EventsPage> {
                 itemCount: snapshot.data.length,
                 itemBuilder: (BuildContext context, int index) {
                   return SizedBox(
-                    // width: 200,
-                    // height: 200,
+                    width: 200,
+                    height: 300,
                     child: Stack(
                       children: <Widget>[
                         Container(
