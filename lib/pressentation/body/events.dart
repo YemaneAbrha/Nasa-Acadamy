@@ -10,7 +10,7 @@ class EventsPage extends StatefulWidget {
 }
 
 class _EventsPageState extends State<EventsPage> {
-  String imageurl = "http://192.168.137.29:8000";
+  String imageurl = "http://192.168.137.29:8000/";
   @override
   Widget build(BuildContext context) {
     // return Scaffold(
@@ -83,7 +83,6 @@ class _EventsPageState extends State<EventsPage> {
                                     snapshot.data[index].body,
                                     style: TextStyle(
                                       color: Colors.black,
-                                      // fontWeight: FontWeight.bold,
                                       fontSize: 20,
                                     ),
                                   ),
