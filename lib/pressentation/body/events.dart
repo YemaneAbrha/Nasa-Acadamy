@@ -49,11 +49,8 @@ class _EventsPageState extends State<EventsPage> {
                           alignment: Alignment.bottomCenter,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              // image:Image.network(src),
-                              // image: Image.network("src"),
                               image: NetworkImage(
                                   imageurl + snapshot.data[index].image),
-                              // ExactAssetImage('assets/images/birthday.jpg'),
                               fit: BoxFit.fill,
                             ),
                             gradient: LinearGradient(
