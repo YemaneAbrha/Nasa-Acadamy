@@ -8,7 +8,7 @@ import 'package:nasa/model/json/data.dart';
 
 Future getMessage(BuildContext context) async {
   try {
-    final url = 'http://192.168.137.42:8000/messages';
+    final url = 'http://192.168.137.29:8000/messages';
     http.Response response = await http.get(
       url,
       headers: {
@@ -25,7 +25,7 @@ Future getMessage(BuildContext context) async {
 }
 
 Future<List<Event>> getEvent(BuildContext context) async {
-  final url = 'http://10.0.2.2:8000/events';
+  final url = 'http://192.168.137.29:8000/events';
   try {
     http.Response response = await http.get(
       url,
