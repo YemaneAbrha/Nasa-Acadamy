@@ -5,7 +5,7 @@ import 'package:nasa/pressentation/common/basicappbar.dart';
 import 'package:nasa/pressentation/common/sidebar.dart';
 import 'package:nasa/pressentation/body/home.dart';
 import 'package:nasa/pressentation/body/events.dart';
-import 'package:nasa/pressentation/body/home.dart';
+import 'package:nasa/pressentation/body/message.dart';
 
 class CommonPage extends StatefulWidget {
   @override
@@ -25,7 +25,7 @@ class _CommonPageState extends State<CommonPage> {
       return HomePage();
     }
     if (_selectedIndex == 1) {
-      return EventsPage();
+      return MessagePage();
     }
     if (_selectedIndex == 2) {
       return EventsPage();
