@@ -1,9 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
-// import 'package:nasa/pressentation/common/basicappbar.dart';
-// import 'package:nasa/pressentation/common/buttomNavigation.dart';
-// import 'package:nasa/pressentation/common/sidebar.dart';
+//From nasa package.
 import 'package:nasa/controller/apiFunction.dart';
 
 class EventsPage extends StatefulWidget {
@@ -12,6 +10,7 @@ class EventsPage extends StatefulWidget {
 }
 
 class _EventsPageState extends State<EventsPage> {
+  String imageurl = "http://192.168.137.29:8000";
   @override
   Widget build(BuildContext context) {
     // return Scaffold(
@@ -50,8 +49,11 @@ class _EventsPageState extends State<EventsPage> {
                           alignment: Alignment.bottomCenter,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image:
-                                  ExactAssetImage('assets/images/birthday.jpg'),
+                              // image:Image.network(src),
+                              // image: Image.network("src"),
+                              image: NetworkImage(
+                                  imageurl + snapshot.data[index].image),
+                              // ExactAssetImage('assets/images/birthday.jpg'),
                               fit: BoxFit.fill,
                             ),
                             gradient: LinearGradient(
