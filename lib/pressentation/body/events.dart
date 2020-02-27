@@ -101,8 +101,5 @@ class _EventsPageState extends State<EventsPage> {
             }
           }),
     );
-    // drawer: SideBarDrawer(),
-    // bottomNavigationBar: ButtomNavigationBarContainer(),
-    // );
   }
 }
