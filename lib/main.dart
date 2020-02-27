@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       },
       title: 'ናሳ ት/ቤት',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Color.fromRGBO(0, 141, 81, 1.0),
       ),
       home: CommonPage(),
     );
