@@ -6,7 +6,6 @@ import 'package:nasa/pressentation/body/events.dart';
 import 'package:nasa/pressentation/body/message.dart';
 import 'package:nasa/pressentation/body/about.dart';
 import 'package:nasa/pressentation/body/location.dart';
-// import 'package:nasa/pressentation/body/about.dart';
 
 class CommonPage extends StatefulWidget {
   @override
@@ -33,7 +32,10 @@ class _CommonPageState extends State<CommonPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                Text("NASA ( NATURALIST ABLE OF SCHOLAR ACADEMY ) "),
+                Text(
+                  "NASA ( NATURALIST ABLE OF SCHOLAR ACADEMY )",
+                  style: TextStyle(color: Colors.white),
+                ),
               ],
             ),
             decoration: BoxDecoration(
@@ -43,10 +45,6 @@ class _CommonPageState extends State<CommonPage> {
               ),
             ),
           ),
-          //  child: Container(
-          // child:
-          // ListView(
-          //   children: <Widget>[
           ListTile(
             leading: Icon(Icons.school),
             title: Text("About",
@@ -61,8 +59,8 @@ class _CommonPageState extends State<CommonPage> {
             },
           ),
           ListTile(
-            leading: Icon(Icons.contact_mail),
-            title: Text("Contact Us",
+            leading: Icon(Icons.place),
+            title: Text("Location",
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 16.0,
@@ -73,69 +71,6 @@ class _CommonPageState extends State<CommonPage> {
               });
             },
           ),
-          ListTile(
-            leading: Icon(Icons.place),
-            title: Text("Location",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 16.0,
-                )),
-            onTap: () {
-              setState(() {
-                _pageSelector = 5;
-              });
-            },
-          ),
-          // ],
-          // ),
-          // ),
-        ],
-      ),
-    );
-  }
-
-  _drawerList() {
-    return Drawer(
-      child: Column(
-        // mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          DrawerHeader(
-            child: ListView(
-              // crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  'John Doe',
-                ),
-              ],
-            ),
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/images/menu_bg.png'),
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
-          // ListView(
-          //   padding: EdgeInsets.zero,
-          //   children: <Widget>[
-          ListTile(
-              // Some Code
-              ),
-          ListTile(
-              // Some Code
-              ),
-          ListTile(
-              // Some Code
-              ),
-          ListTile(
-              // Some Code
-              ),
-          ListTile(
-              // Some Code
-              ),
-          // ],
-          // ),
         ],
       ),
     );
@@ -154,10 +89,7 @@ class _CommonPageState extends State<CommonPage> {
     if (_pageSelector == 3) {
       return AboutPage();
     }
-    // if (_pageSelector == 4) {
-    //   return AboutPage();
-    // }
-    if (_pageSelector == 5) {
+    if (_pageSelector == 4) {
       return LocationPage();
     } else {
       return HomePage();
@@ -170,7 +102,6 @@ class _CommonPageState extends State<CommonPage> {
       backgroundColor: Color.fromRGBO(235, 237, 240, 1.0),
       appBar: BasicAppBar.getAppBar(context),
       drawer: _sideBarDrawer(),
-      // drawer: _drawerList(),
       body: navigateToScreen(),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
