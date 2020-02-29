@@ -45,7 +45,7 @@ flutter:
   assets:
    - assets/images/culturDay.jpg
    - assets/images/graduation.jpg
-   - assets/images/labcolor.jpg
+  #  - assets/images/labcolor.jpg
    - assets/images/self.jpg 
    - assets/images/enjoy.jpg
   #  - assets/images/school.jpg
