@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nasa/pressentation/common/basicappbar.dart';
-import 'package:nasa/pressentation/common/buttomNavigation.dart';
-import 'package:nasa/pressentation/common/sidebar.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -11,10 +8,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    // return Scaffold(
-    // backgroundColor: Color.fromRGBO(235, 237, 240, 1.0),
-    // appBar: BasicAppBar.getAppBar(context),
-
     return Container(
       child: ListView(
         children: <Widget>[
@@ -37,7 +30,7 @@ class _HomePageState extends State<HomePage> {
                   alignment: Alignment.bottomCenter,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: ExactAssetImage('assets/images/birthday.jpg'),
+                      image: ExactAssetImage('assets/images/enjoy.jpg'),
                       fit: BoxFit.fill,
                     ),
                     gradient: LinearGradient(
@@ -51,10 +44,10 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   child: Text(
-                    "የ ናሳ ትምህርት ቤት ተማሪዎች ልደትን ሲያከብሩ",
+                    "የናሳ ትምህርት ቤት ተማሪዎች መዝናኛ ቦታ ሂደዉ ከ ጎደኞቻቸዉ ጋ ሲዝናኑ",
                     style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 20.0,
+                      color: Colors.white,
+                      fontSize: 25.0,
                     ),
                   ),
                 ),
@@ -80,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                   alignment: Alignment.bottomCenter,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: ExactAssetImage('assets/images/lab.jpg'),
+                      image: ExactAssetImage('assets/images/culturDay.jpg'),
                       fit: BoxFit.fill,
                     ),
                     gradient: LinearGradient(
@@ -94,10 +87,10 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   child: Text(
-                    "የ ናሳ ትምህርት ቤት ተማሪዎች ቤተ፡ሙከራ ላይ ሁነው",
+                    "የናሳ ትምህርት ቤት ተማሪዎች የ ብሔር፡ብሔረሰዎች በዓል ሲያከብሩ",
                     style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 20.0,
+                      color: Colors.white,
+                      fontSize: 25.0,
                     ),
                   ),
                 ),
@@ -123,7 +116,7 @@ class _HomePageState extends State<HomePage> {
                   alignment: Alignment.bottomCenter,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: ExactAssetImage('assets/images/labcolor.jpg'),
+                      image: ExactAssetImage('assets/images/graduation.jpg'),
                       fit: BoxFit.fill,
                     ),
                     gradient: LinearGradient(
@@ -137,10 +130,10 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   child: Text(
-                    "የ ናሳ ትምህርት ቤት ተማሪዎች ቤተ፡ሙከራ ላይ ሁነው",
+                    "የናሳ ትምህርት ቤት ተማሪዎች የ ምርቃት ስነ ፡ ስርኣት",
                     style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 20.0,
+                      color: Colors.white,
+                      fontSize: 25.0,
                     ),
                   ),
                 ),
@@ -166,7 +159,7 @@ class _HomePageState extends State<HomePage> {
                   alignment: Alignment.bottomCenter,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: ExactAssetImage('assets/images/water.JPG'),
+                      image: ExactAssetImage('assets/images/self.jpg'),
                       fit: BoxFit.fill,
                     ),
                     gradient: LinearGradient(
@@ -180,9 +173,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   child: Text(
-                    " የ  ናሳ ትምህርት ቤት ተማሪዎች water park ሂደው ሲዝናኑ",
+                    " የናሳ ትምህርት ቤት ተማሪዎች ለ ሜሪ ፡ ጆይ ኢትዮጽያ  ድጋፍ ሲያደርጉ",
                     style: TextStyle(
-                      color: Colors.black,
+                      color: Colors.white,
                       fontSize: 20.0,
                     ),
                   ),
@@ -193,8 +186,5 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
     );
-    // drawer: SideBarDrawer(),
-    // bottomNavigationBar: ButtomNavigationBarContainer(),
-    // );
   }
 }
