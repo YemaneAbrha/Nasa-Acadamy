@@ -33,7 +33,7 @@ class _CommonPageState extends State<CommonPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                Text("NASA JSAKDKSDJ KJKSAJSKDJ JKDSSAJK"),
+                Text("NASA ( NATURALIST ABLE OF SCHOLAR ACADEMY ) "),
               ],
             ),
             decoration: BoxDecoration(
