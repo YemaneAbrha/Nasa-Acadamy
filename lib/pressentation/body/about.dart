@@ -11,16 +11,10 @@ class AboutPage extends StatefulWidget {
 class _AboutPageState extends State<AboutPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Color.fromRGBO(235, 237, 240, 1.0),
-      appBar: BasicAppBar.getAppBar(context),
-      body: Container(
-        child: ListView(
-          children: <Widget>[],
-        ),
+    return Container(
+      child: ListView(
+        children: <Widget>[],
       ),
-      drawer: SideBarDrawer(),
-      bottomNavigationBar: ButtomNavigationBarContainer(),
     );
   }
 }
