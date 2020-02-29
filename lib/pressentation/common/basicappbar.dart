@@ -5,6 +5,7 @@ class BasicAppBar {
     return AppBar(
       title: Text("ናሳ ት/ቤት"),
       backgroundColor: Color.fromRGBO(0, 141, 81, 1.0),
+      automaticallyImplyLeading: true,
     );
   }
 }
