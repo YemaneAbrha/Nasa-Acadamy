@@ -14,7 +14,10 @@ class _AboutPageState extends State<AboutPage> {
           Card(
             child: ListTile(
               leading: Icon(Icons.school),
-              title: Text("Vision"),
+              title: Text(
+                "Vision",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
               subtitle: Text(
                   "The school will be a diverse community engaged in the in the process of preparing our students to live exemplary lives, committed to sharing wisdom, showing courage and supporting in the country in 2025."),
             ),
@@ -22,7 +25,10 @@ class _AboutPageState extends State<AboutPage> {
           Card(
             child: ListTile(
               leading: Icon(Icons.school),
-              title: Text("Mission"),
+              title: Text(
+                "Mission",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
               subtitle: Text(
                   "Nasa academy is dedicated to satisfy customers, deliver quality educational service create good public image , create good market share and develop employees in the next three years."),
             ),
@@ -30,7 +36,10 @@ class _AboutPageState extends State<AboutPage> {
           Card(
             child: ListTile(
               leading: Icon(Icons.school),
-              title: Text("Mission"),
+              title: Text(
+                "Goal",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
               subtitle: Text(
                   "Nasa academy is a diverse community preparing students to live exemplary lives, committed to sharing wisdom, showing courage, and promote in orientation. "),
             ),
