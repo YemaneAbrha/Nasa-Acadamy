@@ -34,7 +34,7 @@ class _CommonPageState extends State<CommonPage> {
               children: <Widget>[
                 Text(
                   "NASA ( NATURALIST ABLE OF SCHOLAR ACADEMY )",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white, fontSize: 25.0),
                 ),
               ],
             ),
