@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
 
 //From nasa package.
@@ -10,14 +9,9 @@ class EventsPage extends StatefulWidget {
 }
 
 class _EventsPageState extends State<EventsPage> {
-  String imageurl = "http://192.168.137.29:8000/";
+  String imageurl = "https://nasa-academy.herokuapp.com/";
   @override
   Widget build(BuildContext context) {
-    // return Scaffold(
-    // backgroundColor: Color.fromRGBO(235, 237, 240, 1.0),
-    // appBar: BasicAppBar.getAppBar(context),
-    // body:
-
     return Container(
       child: FutureBuilder(
           future: getEvent(context),
@@ -29,7 +23,6 @@ class _EventsPageState extends State<EventsPage> {
                 ),
               );
             } else {
-              print(snapshot.data[0].title);
               return ListView.builder(
                 itemCount: snapshot.data.length,
                 itemBuilder: (BuildContext context, int index) {
