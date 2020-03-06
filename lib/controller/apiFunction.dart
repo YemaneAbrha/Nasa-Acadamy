@@ -17,11 +17,8 @@ Future getMessage(BuildContext context) async {
     );
 
     final event = jsonDecode(response.body);
-    print(event);
     return event;
-  } catch (e) {
-    print(e);
-  }
+  } catch (e) {}
 }
 
 Future<List<Event>> getEvent(BuildContext context) async {
@@ -37,7 +34,6 @@ Future<List<Event>> getEvent(BuildContext context) async {
     final datas = jsonDecode(response.body);
     List<Event> events = [];
     for (var data in datas) {
-      print(data);
       Event event = Event(
         data["_id"],
         data["title"],
@@ -46,9 +42,7 @@ Future<List<Event>> getEvent(BuildContext context) async {
       );
       events.add(event);
     }
-    // print(events);
+
     return events;
-  } catch (err) {
-    print(err);
-  }
+  } catch (err) {}
 }

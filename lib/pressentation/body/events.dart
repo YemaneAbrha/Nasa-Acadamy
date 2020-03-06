@@ -10,7 +10,6 @@ class EventsPage extends StatefulWidget {
 }
 
 class _EventsPageState extends State<EventsPage> {
-  // String imageurl = "https://nasa-academy.herokuapp.com/";
   @override
   Widget build(BuildContext context) {
     return Container(
