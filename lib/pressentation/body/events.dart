@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:cached_network_image/cached_network_image.dart';
 //From nasa package.
 import 'package:nasa/controller/apiFunction.dart';
 
@@ -9,7 +10,7 @@ class EventsPage extends StatefulWidget {
 }
 
 class _EventsPageState extends State<EventsPage> {
-  String imageurl = "https://nasa-academy.herokuapp.com/";
+  // String imageurl = "https://nasa-academy.herokuapp.com/";
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -26,42 +27,26 @@ class _EventsPageState extends State<EventsPage> {
               return ListView.builder(
                 itemCount: snapshot.data.length,
                 itemBuilder: (BuildContext context, int index) {
+                  final cachedImage = CachedNetworkImage(
+                    imageUrl: snapshot.data[index].image,
+                    errorWidget: (context, url, error) => Icon(Icons.error),
+                  );
                   return SizedBox(
-                    width: 200,
-                    height: 300,
                     child: Stack(
                       children: <Widget>[
-                        Container(
-                          width: 200,
-                          height: 200,
-                          color: Colors.white,
+                        SizedBox(
+                          height: 10.0,
                         ),
                         Container(
-                          padding: EdgeInsets.all(10.0),
-                          margin: EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 0.0),
-                          alignment: Alignment.bottomCenter,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: NetworkImage(
-                                  imageurl + snapshot.data[index].image),
-                              fit: BoxFit.fill,
-                            ),
-                            gradient: LinearGradient(
-                              begin: Alignment.topCenter,
-                              end: Alignment.bottomCenter,
-                              colors: <Color>[
-                                Colors.black.withAlpha(1),
-                                Colors.black12,
-                                Colors.black45
-                              ],
-                            ),
-                          ),
+                          child: cachedImage,
+                        ),
+                        Positioned(
+                          bottom: 48.0,
+                          left: 10.0,
+                          right: 10.0,
                           child: Card(
-                            color: Colors.transparent,
+                            elevation: 8.0,
                             child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 ListTile(
                                   title: Text(
@@ -69,14 +54,13 @@ class _EventsPageState extends State<EventsPage> {
                                     style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 30,
+                                      fontSize: 20,
                                     ),
                                   ),
                                   subtitle: Text(
                                     snapshot.data[index].body,
                                     style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 20,
                                     ),
                                   ),
                                 ),
