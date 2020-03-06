@@ -34,9 +34,6 @@ class _EventsPageState extends State<EventsPage> {
                   return SizedBox(
                     child: Stack(
                       children: <Widget>[
-                        SizedBox(
-                          height: 10.0,
-                        ),
                         Container(
                           child: cachedImage,
                         ),
